@@ -1,0 +1,19 @@
+{
+  "name": "pizza-dough-calculator",
+  "version": "1.0.0",
+  "description": "Apizza Dough Calculator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sblackstone/pizza-dough-calculator.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sblackstone/pizza-dough-calculator/issues"
+  },
+  "homepage": "https://github.com/sblackstone/pizza-dough-calculator#readme"
+}
