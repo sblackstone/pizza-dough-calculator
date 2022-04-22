@@ -10,9 +10,9 @@ const scaleIngredients  = (scalar : number) => {
 }
 
 const outputRecipe = (recipe:IIngredients) => {
-  for (const [ingredient, qty] of Object.entries(ingredients)) {
+  for (const [ingredient, qty] of Object.entries(recipe)) {
     const roundedQty : number = Math.round(qty*1000) / 1000.0;
-    console.log(`${ingredient}\t${roundedQty}\n`);
+    console.log(`${ingredient}\t${roundedQty}`);
   }
 }
 
