@@ -1,3 +1,5 @@
+#!/usr/bin/env ts-node
+
 import { ingredients, IIngredients } from './ingredients';
 
 
@@ -16,4 +18,10 @@ const outputRecipe = (recipe:IIngredients) => {
   }
 }
 
-outputRecipe(scaleIngredients(0.6666666));
+const PIZZAS_PER_RECIPE = 3.0;
+const PIZZAS_TO_MAKE = parseInt(process.argv[2]);
+const scale =  (PIZZAS_TO_MAKE / PIZZAS_PER_RECIPE) + 0.03; 
+console.log(`Making ${PIZZAS_TO_MAKE} pizzas by scaling the recipe by ${scale*100} %`)
+
+
+outputRecipe(scaleIngredients(scale));
